@@ -7,6 +7,9 @@ server.use(express.json());
 server.use(express.static(__dirname + "/../public/"));
 server.use(cors());
 
+
+// API's 
+
 server.get("/api/technologies", async (req, res) => {
     let technologies = await Technology.find();
     technologies = technologies.map((technology) => {
