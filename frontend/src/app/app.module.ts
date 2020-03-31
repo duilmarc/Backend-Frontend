@@ -10,6 +10,7 @@ import { TechnologiesComponent } from './pages/technologies/technologies.compone
 import { TechnologyComponent } from './pages/technology/technology.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './share/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './share/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
