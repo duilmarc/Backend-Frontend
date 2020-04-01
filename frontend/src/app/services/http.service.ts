@@ -17,7 +17,7 @@ export class HttpService {
   }
   
   public getTechnology( id : string) {
-    return this._http.get<Techonology>(this.baseUrl + "/technology" + id);
+    return this._http.get<Techonology>(this.baseUrl + "/technology/" + id);
   }
 
   public searchTechnology( query : string){

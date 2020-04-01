@@ -4,7 +4,7 @@
         <h4 class= "card-title">{{ technology.name }}</h4>
         <p class="card-text"> {{ technology.description }} </p>
         <p class= "card-text"> 
-            <small class="text-muted" *ngfor="let tag of technology.tags">
+            <small class="text-muted" *ngFor="let tag of technology.tags">
                 <a href="#"> {{ tag }}
                 </a>
             </small>
