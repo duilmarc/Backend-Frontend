@@ -21,7 +21,7 @@ export class HttpService {
   }
 
   public searchTechnology( query : string){
-    return this._http.get<Techonology>(this.baseUrl + "/technology/search/" + query);
+    return this._http.get<Techonology[]>(this.baseUrl + "/technology/search/" + query);
   }
 }
  
